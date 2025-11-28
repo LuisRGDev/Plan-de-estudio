@@ -1,79 +1,159 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagina TI</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <center><h1>Somos TI, tu lugar seguro</h1></center>
-        
+      <h1>The New One</h1>
     </header>
-    <section class="content">
-        <div>
-        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, minima recusandae vel minus dicta veniam enim molestiae molestias harum itaque nam expedita reiciendis, laborum sapiente consequuntur iusto blanditiis sint saepe.
+    <main>
+      <article>
+        <h2>Mi labor en el area de Ti</h2>
+        <p>
+          En mi rol como empleado de apoyo en el área de TI, cada día es una
+          nueva oportunidad para ayudar, aprender y asegurar que todo funcione
+          como debe. Me encargo de brindar soporte a mis compañeros, atendiendo
+          dudas y resolviendo problemas técnicos con actitud positiva y energía.
+          Ya sea configurando equipos, actualizando sistemas, instalando
+          software o verificando que todo esté en orden, siempre doy lo mejor
+          para mantener un ambiente tecnológico estable y eficiente. También
+          apoyo en la preparación de equipos para capacitaciones, juntas o
+          eventos especiales, asegurándome de que todo —desde el sonido hasta el
+          video— esté listo y funcionando sin contratiempos. Me gusta
+          anticiparme a los detalles, hacer pruebas, ajustar lo necesario y
+          estar pendiente durante el evento para reaccionar de inmediato ante
+          cualquier inconveniente. Además, participo activamente en el
+          mantenimiento preventivo, revisando computadoras, redes y dispositivos
+          para evitar fallas y asegurar que todos tengan las herramientas
+          tecnológicas que necesitan para desempeñar su trabajo sin
+          preocupaciones. En pocas palabras, mi trabajo consiste en estar ahí
+          cuando se me necesita, con buena actitud, disposición y entusiasmo,
+          disfrutando cada reto y aportando a que todo marche de forma fluida en
+          el área de TI. Cada día trae algo nuevo, y eso es lo que hace que mi
+          labor sea tan dinámica y gratificante. ¡Siempre listo para ayudar!
+        </p>
+      </article>
+
+      <section class="section-table">
+        <h2 id="titulo-tareas">
+          Las tareas que realizo mas comunmente son las siguientes:
         </h2>
-    </div>
-    </section>
-    
-    <section class="formulario">
-        <form action="#" >
-            <div>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="name" name="first-name" required placeholder="Nombre/nombres">
-            </div>
-            <div>
-                <label for="apellido">Apellio:</label>
-                <input type="text" id="apellido" name="last-name" required placeholder="Apellido/apellidos">
-            </div>
-
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required placeholder="name@example.com">
-            </div>
-
-            <div>
-                <label for="password">Contraseña:</label>
-                <input type="password" name="password" id="pass" required placeholder="Contraseña" minlength="8">
-            </div>
-
-            <button type="submit">Enviar formulario</button>
-
-        </form>
-    </section>
-
-    <section class="section-table">
         <table>
-            <thead>
-                <tr>
-                    <td>Solicitado</td>
-                    <td>Tarea</td>
-                    <td>Descripcion</td>
-                    <td>Destinatario</td>
-                </tr>
-                
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Jorge Suarez</td>
-                    <td>Curso desarrollo de paginas web</td>
-                    <td>Aprender sobre el desarrollo de paginas web a traves de un plan de estudio que va de basico hasta avanzado</td>
-                    <td>TI</td>
-                </tr>
-                
-            </tbody>
+          <thead>
+            <tr>
+              <td>Solicitado</td>
+              <td>Tarea</td>
+              <td>Descripcion</td>
+              <td>Destinatario</td>
+            </tr>
+          </thead>
 
-            <tfoot>
-                <tr>
-                    <td></td>
-                </tr>
-            </tfoot>
+          <tbody>
+            <tr>
+              <td>Jorge Suarez</td>
+              <td>Alta de nuevos ingresos</td>
+              <td>
+                Realizar el alta de un nuevo empleado en el dominio, preparar
+                sus herramientas, utilerias y brindarle la capacitacion
+                necesaria para que conozca el uso correcto de cada una de ellas,
+                ademas de apoyarlo en caso de que tenga alguna duda sobre como
+                solicitar apoyo de TI para asuntos correspondientes al area.
+              </td>
+              <td>TI</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <th>Tickets resueltos</th>
+              <th colspan="2">200</th>
+            </tr>
+          </tfoot>
         </table>
+      </section>
 
-    </section>
-    
+      <figure>
+        <!-- <video src="../multimedia.mp4" class="video1" controls width="600" height="400" ></video> -->
 
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          style="width: 100%; height: auto"
+        >
+          <source src="../Zorro_TI.mp4" type="video/mp4" />
+          tu navegador no soporta fomatos de video
+        </video>
+        <figcaption>Video demostrativo del area de TI</figcaption>
+        <!-- <audio src=""></audio>
 
-</body>
+        <audio controls preload="auto">
+          <source src="ruta del audio.mp3" type="audio/mpeg" />
+          Tu navegador no soporta audio HTML5
+        </audio> -->
+
+        <!-- <iframe
+          width="560"
+          height="315"
+          src="link del video"
+          title="Youtube video player"
+          frameborder="0"
+          allow="acelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe> -->
+      </figure>
+
+      <section class="formulario">
+        <h2>Contacto</h2>
+        <form action="#">
+          <div>
+            <label for="nombre">Nombre completo:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Nombre"
+            />
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="name@example.com"
+            />
+          </div>
+
+          <div>
+            <label class="text-comment" for="comment">Comentario</label>
+          </div>
+          <div>
+            <textarea
+              class="area-comment"
+              name="comment"
+              id="comment"
+              placeholder="Escribe tu comentario aqui"
+              rows="1"
+              style="resize: auto"
+            ></textarea>
+          </div>
+
+          <button type="submit">Enviar formulario</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      Todos los derechos reservados TheNewOne©.| Aviso de Privacidad
+    </footer>
+  </body>
 </html>
