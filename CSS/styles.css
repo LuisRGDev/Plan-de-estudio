@@ -1,4 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
+    position: relative;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -9,7 +16,7 @@ body{
     color: white;
     min-height: 100vh;
     position: relative;
-
+    height: 100vh;
 }
 
 body::before{
@@ -28,11 +35,15 @@ body::before{
     transform: scale(1.1);
 }
 
+nav{
+    position: relative;
+}
+
 nav ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #165885;
+    background-color: #90b1c5;
     overflow: hidden;
     height: 70px;
     display:flex;
@@ -41,6 +52,13 @@ nav ul{
     justify-content: center;
 }
 
+
+nav .imgtno{
+    position: absolute;
+    width:100px;
+    max-width: 100%;
+    height: 100px;
+}
 
 nav li a{
     display: block;
@@ -77,32 +95,40 @@ article p{
     padding-bottom: 8PX;
 }
 
+
+
 .section-table{
     margin: 8rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
 table{
+    margin-top: 1rem;
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
-    border: 3px solid rgb(28, 0, 128);
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgb(32, 32, 146);
 }
 
 thead tr{
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    border: 3px solid rgb(28, 0, 128);
+    border: 3px solid rgb(255, 255, 255);
 }
 
 thead td{
-    border: 3px solid rgb(28, 0, 128);
+    border: 3px solid rgb(255, 255, 255);
 }
 
 tbody td{
     text-align: center;
-    border: 3px solid rgb(28, 0, 128);
+    border: 3px solid rgb(255, 255, 255);
+}
+
+figure{
+margin: 0;
 }
 
 video{
@@ -113,4 +139,45 @@ margin-top: 25px;
 
 figcaption{
     font-size: 12px;
+}
+
+.formulario h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 300px;
+}
+
+form{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-left: 100px;
+    margin-right: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form .boton-env{
+    margin-left: 50px;
+    width: 200px;
+    height: 30px;
+}  
+
+form .area-comment{
+    margin-left: 18px;
+}
+
+
+body footer{
+     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer{
+    background-color: black;
+    color: #fff;
+    min-height: 60px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
