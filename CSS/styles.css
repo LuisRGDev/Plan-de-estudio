@@ -69,10 +69,11 @@ nav li a{
 }
 
 nav li a:hover{
-    background-color: rgb(35, 37, 37);
+    background-color: rgb(32, 32, 146);
 }
 
 article h2{
+    margin-top: 25px;
     font-size: 22px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
@@ -166,18 +167,42 @@ form .area-comment{
     margin-left: 18px;
 }
 
-
-body footer{
-     display: flex;
+footer{
+    height: 300px;
+    width: 100%;
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
 }
 
-footer{
+.section-contact{
+    margin-top: 25px;
+    background-color: #fff;
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-contact img{
+    width:100px;
+    max-width: 100%;
+    height: 100px;
+}
+
+.section-copyright{
+    height: 15%;
     background-color: black;
     color: #fff;
     min-height: 60px;
-    position: absolute;
     bottom: 0;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
