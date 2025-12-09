@@ -34,42 +34,53 @@ body::before{
     filter: blur(5px);
     transform: scale(1.1);
 }
-
-nav{
-    position: relative;
-}
-
-nav ul{
+.nav-bar ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     background-color: #90b1c5;
     overflow: hidden;
-    height: 70px;
     display:flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
-    justify-content: center;
 }
 
-
-nav .imgtno{
-    position: absolute;
-    width:100px;
-    max-width: 100%;
-    height: 100px;
+.nav-bar li{
+    padding: 14px 30px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 25px;
 }
 
-nav li a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+.nav-bar li a{
     text-decoration: none;
+    color: #333;
+    line-height: 50px;
 }
 
-nav li a:hover{
-    background-color: rgb(32, 32, 146);
+.item-centralizado{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.item-centralizado img{
+    width: 120px;
+    height: auto;
+    vertical-align: middle;
+    transition: transform 0.3 ease;
+}
+
+.imgtno{
+    height: auto;
+}
+
+
+nav .options-list:hover{
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.2);
+    box-shadow: 0 0 50px;
 }
 
 article h2{
@@ -142,9 +153,16 @@ figcaption{
     font-size: 12px;
 }
 
+.formulario{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .formulario h2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: 300px;
 }
 
 form{
