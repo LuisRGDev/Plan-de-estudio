@@ -100,7 +100,7 @@ nav .options-list:hover{
 .title{
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 29px;
+    font-size: 25px;
     margin-right:300px;
     padding-left: 100px;
     background-image: linear-gradient(to bottom, #f0f0f0 0%, #a0a0a0 50%, #f0f0f0 100%);
@@ -174,18 +174,38 @@ figcaption{
 }
 
 .formulario{
-    /* background-image: linear-gradient(to bottom, #3150ff 0%, #ffffff 50%, #2007fc 100%); */
-    height: 400px;
+    background-image: linear-gradient(to bottom, #3150ff 0%, #ffffff 50%, #2007fc 100%);
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "titulo titulo"
+    "izquierda derecha";
+    height: 90vh;
+    gap: 20px;
+}
+
+.titulo{
+    grid-area: titulo;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+} 
+
+.cont-form-izquierda{
+    grid-area: izquierda;
+    padding: 20px;
+}
+
+.cont-form-derecha{
+    grid-area: derecha;
+    padding: 20px;
 }
 
 .formulario h2{
     font-family: Playfair;
     font-size: 60px;
-    background-image: linear-gradient(to top, #0468ff 0%, #3639ff 50%, #000000 100%);
+    background-image: linear-gradient(to top, #000000 0%, #3639ff 50%, #0468ff 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -194,44 +214,54 @@ figcaption{
 form{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    margin-left: 100px;
-    margin-right: 500px;
-    display: flex;
-    flex-direction: column;
     gap: 10px;
     color: #030303;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 #name{
-    width: 300px;
-    height: 40px;
-    border-radius: 10px;
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
 }
 
 #email{
-    width: 300px;
-    height: 40px;
-    border-radius: 10px;
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
 }
 
 #comment{
     width: 500px;
-    height: 100px;
-    border-radius: 10px;  
+    height:150px;
+    border-radius: 5px;  
 }
 
 
 form .boton-env{
     width: 200px;
-    height: 30px;
+    height: 50px;
+    border-radius: 7px;
+    border: none;
+    background-image: linear-gradient(to right, #002fff 0%, #1e1f74 50%);
+    cursor: pointer;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
 }  
 
-form .area-comment{
-    margin-left: 18px;
+.boton-env:hover{
+    background-color: #0486ff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+
+
 footer{
-    height: 300px;
+    height: 100px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -241,7 +271,6 @@ footer{
 }
 
 .section-contact{
-    margin-top: 25px;
     background-color: #fff;
     height: 85%;
     width: 100%;
@@ -251,10 +280,40 @@ footer{
     align-items: center;
 }
 
-.section-contact img{
-    width:100px;
+.section-contact ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+    color: #000000;
+}
+
+.contact-resources{
+    list-style-type: none;
+    padding: 20px;
+}
+
+.contact-resources li{
+    padding: 20px;
+    color: #000000;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.imgs-footer{
+    width: 50px;
     max-width: 100%;
-    height: 100px;
+    height: auto;
+}
+
+.img-footer{
+    display: flex;
+    flex-direction: column;
+    width:120px;
+    max-width: 100%;
+    height: auto;
 }
 
 .section-copyright{
