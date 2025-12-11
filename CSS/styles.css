@@ -161,6 +161,7 @@ tbody td{
 
 figure{
 margin: 0;
+ background-image: linear-gradient(to bottom, #3150ff 0%, #ffffff 50%, #3150ff 100%);
 }
 
 video{
