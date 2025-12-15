@@ -115,6 +115,14 @@ nav .options-list:hover{
     -webkit-text-fill-color: transparent;
     text-shadow: 1px 1px 1px rgba(0, 60, 255, 0.5), 0px 0px 1px rgba(0, 0, 0, 0.8);
 }
+.article-vid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.article-vid #Descripcion{
+    margin-left: 100px;
+}
 
 article h2{
     margin-top: 25px;
@@ -124,14 +132,26 @@ article h2{
 }
 
 article p{
-    padding: 8rem;
     font-size: 20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-top: 8px;
     padding-bottom: 8PX;
 }
 
+figure{
+    margin: 0;
+    margin-left: 130px;
+}
 
+video{
+    width: 90%;
+    height: auto;
+    margin-top: 25px;
+}
+
+figcaption{
+    font-size: 12px;
+}
 
 .section-table{
     margin: 8rem;
@@ -163,20 +183,7 @@ tbody td{
     border: 3px solid rgb(255, 255, 255);
 }
 
-figure{
-margin: 0;
- background-image: linear-gradient(to bottom, #3150ff 0%, #ffffff 50%, #3150ff 100%);
-}
 
-video{
-width: 100%; 
-height: auto;
-margin-top: 25px;
-}
-
-figcaption{
-    font-size: 12px;
-}
 
 .formulario{
     background-image: linear-gradient(to bottom, #3150ff 0%, #ffffff 50%, #2007fc 100%);
