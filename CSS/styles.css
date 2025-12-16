@@ -118,14 +118,16 @@ nav .options-list:hover{
 .article-vid{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "izquierda derecha" ;
 }
 
-.article-vid #Descripcion{
-    margin-left: 100px;
+#Descripcion{
+    grid-area: derecha;
 }
 
 article h2{
-    margin-top: 25px;
+    margin-top: 50px;
     font-size: 22px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
@@ -153,7 +155,7 @@ figcaption{
     font-size: 12px;
 }
 
-.section-table{
+/* .section-table{
     margin: 8rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -181,9 +183,59 @@ thead td{
 tbody td{
     text-align: center;
     border: 3px solid rgb(255, 255, 255);
+} */
+.tareas{
+    margin: 0;
+    padding: 0;
+    height: auto;
 }
 
+.tareas .title-tasks{
+    padding-top: 25px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    
+}
 
+.list-tasks{
+    margin-top: 15px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "izquierda derecha";
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+
+}
+
+#left-list{
+    place-items: center;
+    grid-area: izquierda;
+}
+
+#left-list li{
+    padding: 7px;
+}
+
+#right-list{
+    place-items: center;
+    text-align: justify;
+    grid-area: derecha;
+}
+
+#right-list li{
+    padding: 7px;
+}
+
+.tasks-button{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center; 
+   padding-bottom: 40px;
+}
 
 .formulario{
     background-image: linear-gradient(to bottom, #3150ff 0%, #ffffff 50%, #2007fc 100%);
@@ -193,8 +245,8 @@ tbody td{
     grid-template-areas: 
     "titulo titulo"
     "izquierda derecha";
-    height: 600px;
-    max-height: 92vh;
+    height: 650px;
+    max-height: 100vh;
     gap: 20px;
 }
 
@@ -271,18 +323,6 @@ form .boton-env{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
-
-footer{
-    height: 100px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-weight: 400;
-}
-
 .section-contact{
     background-color: #fff;
     height: 85%;
@@ -305,7 +345,6 @@ footer{
 
 .contact-resources{
     list-style-type: none;
-    padding: 20px;
 }
 
 .contact-resources li{
@@ -313,6 +352,22 @@ footer{
     color: #000000;
     font-size: 17px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form-icons{
+    width: 25px;
+    max-width: 100%;
+    height: auto;
+}
+
+footer{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
 }
 
 .imgs-footer{
