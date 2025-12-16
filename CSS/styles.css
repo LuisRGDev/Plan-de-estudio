@@ -20,24 +20,25 @@ body{
     height: 100vh;
 }
 
-body::before{
+body::before {
     content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 95%;
-    height: 100%;
-    z-index: -1;
-    background-image: url("https://icorp.com.mx/wp-content/uploads/2020/01/%C2%BFCual-es-la-diferencia-entre-TI-y-TICs-copia.webp");
-    background-repeat: no-repeat;
+    position: fixed;
+    inset: 0;
+     background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url("https://icorp.com.mx/wp-content/uploads/2020/01/%C2%BFCual-es-la-diferencia-entre-TI-y-TICs-copia.webp");
     background-size: cover;
     background-position: center;
-    filter: blur(5px);
-    transform: scale(1.1);
+    background-repeat: no-repeat;
+    /* filter: blur(5px); */
+    z-index: -1;
 }
 
 nav{
-    background-image: linear-gradient(to bottom, #0486ff 0%, #ffffff 50%, #2007fc 100%);
+    background-image: linear-gradient(to bottom, #0623a0 0%, #ffffff 50%, #1b0e97 100%);
 
 }
 
@@ -229,16 +230,34 @@ tbody td{
     padding: 7px;
 }
 
-.tasks-button{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center; 
-   padding-bottom: 40px;
+.area-btn-tareas{
+    text-align: center;
+    padding-bottom: 30px;
+    
+}
+
+.tareas-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-image: linear-gradient(to top, #123cfa 0%, #000000 50%, #303eff 100%);
+    color:white;
+    width: 150px;
+    height: 50px;
+    text-decoration: none;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.area-btn-tareas img{
+    color: white;
+    filter: hue-rotate(120deg);
 }
 
 .formulario{
-    background-image: linear-gradient(to bottom, #3150ff 0%, #ffffff 50%, #2007fc 100%);
+    background-image: linear-gradient(to bottom, #193aa5 0%, #bcc1d1 50%, #1b0e97 100%);
     display: grid;
     grid-template-rows: 100px 1fr;
     grid-template-columns: 1fr 1fr;
@@ -270,7 +289,7 @@ tbody td{
 .formulario h2{
     font-family: Playfair;
     font-size: 60px;
-    background-image: linear-gradient(to top, #000000 0%, #0000ff 50%, #020202 100%);
+    background-image: linear-gradient(to top, #000000 0%, #fafaff 50%, #020202 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -311,10 +330,10 @@ form .boton-env{
     height: 50px;
     border-radius: 7px;
     border: none;
-    background-image: linear-gradient(to right, #002fff 0%, #1e1f74 50%);
+    background-image: linear-gradient(to bottom, #f3f3f3 0%, #292bad 50%);
     cursor: pointer;
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }  
 
 .boton-env:hover{
