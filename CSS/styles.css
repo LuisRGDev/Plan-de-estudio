@@ -251,6 +251,12 @@ tbody td{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.tareas-btn:hover{
+    /* background-color: #ffffff; */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
 .area-btn-tareas img{
     color: white;
     filter: hue-rotate(120deg);
