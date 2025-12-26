@@ -235,7 +235,7 @@ tbody td{
 .tareas-btn{
     display: inline-block;
     padding: 10px 20px;
-    background-image: linear-gradient(to top, #123cfa 0%, #000000 50%, #303eff 100%);
+    background-image: linear-gradient(to top left, #123cfa 0%, #050931 50%, #303eff 100%);
     color:white;
     width: 150px;
     height: 50px;
@@ -249,8 +249,8 @@ tbody td{
 
 .tareas-btn:hover{
     /* background-color: #ffffff; */
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    transform: scale(1.02);
+    box-shadow: 3px 3px 12px 2px rgb(236, 236, 236);
 }
 
 .area-btn-tareas img{
@@ -271,7 +271,10 @@ tbody td{
     margin-bottom: 20px;
 }
 
-.valores_title{
+.valores__title{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    padding: 30PX;
 }
 
 .valores__list{
@@ -284,13 +287,17 @@ tbody td{
 
 .valores__list li{
     list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 1.1rem;
     margin: 10px;
     padding: 35px;
-    border: 2px solid ;
-    border-color: #000000;
+    background-image: linear-gradient(to left, #6a86ff 0%, #0015fc 50%, #30a2ff 100%);
+    box-shadow: -6px 0 0 0 rgb(255, 255, 255);
+    border: none;
     border-radius: 5px;
-    padding-bottom: 10px;
-    width: 50vw;
+    padding-bottom: 20px;
+    width: 70vw;
 
 }
 
@@ -336,7 +343,6 @@ tbody td{
 form{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    gap: 10px;
     color: #030303;
     display: flex;
     flex-direction: column;
@@ -345,18 +351,22 @@ form{
 }
 
 #name{
+    border: none;
     width: 500px;
     height: 50px;
     border-radius: 5px;
 }
 
 #email{
+    border: none;
     width: 500px;
     height: 50px;
     border-radius: 5px;
 }
 
 #comment{
+    font-size: 15px;
+    border: none;
     width: 500px;
     height:150px;
     border-radius: 5px;  
@@ -368,7 +378,7 @@ form .boton-env{
     height: 50px;
     border-radius: 7px;
     border: none;
-    background-image: linear-gradient(to bottom, #f3f3f3 0%, #292bad 50%);
+    background-image: linear-gradient(to bottom, #f3f3f3 0%, #191df8 50%);
     cursor: pointer;
     font-size: 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
