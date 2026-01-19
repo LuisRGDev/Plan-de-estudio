@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root{
+    --fuente-principal: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 body{
     position: relative;
     margin: 0;
@@ -58,8 +62,8 @@ body::before {
     padding: 12px 30px;
     cursor: pointer;
     /* margin-left: 25px; */
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #fff;
+    font-family: var(--fuente-principal);
+    color: #ffffff;
     font-size: 1.4rem;
 }
 
@@ -107,7 +111,7 @@ nav .options-list:hover{
 
 .title{
     display: flex;   
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--fuente-principal);
     font-size: 1.5rem;
     /* margin-left: 20px; */
     -webkit-text-fill-color: transparent;
@@ -128,13 +132,13 @@ nav .options-list:hover{
 .article__title{
     margin-top: 50px;
     font-size: 1.5rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--fuente-principal);
     text-align: center;
 }
 
 .article__content{
     font-size: 1.2rem;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: var(--fuente-principal);
     padding-top: 8px;
     padding-bottom: 8PX;
 }
@@ -192,7 +196,7 @@ tbody td{
 .tareas .title-tasks{
     padding-top: 25px;
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--fuente-principal);
     font-size: 1.6rem;
     
 }
@@ -204,7 +208,7 @@ tbody td{
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "izquierda derecha";
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--fuente-principal);
     font-size: 1rem;
 
 }
@@ -269,14 +273,14 @@ tbody td{
     justify-content: center;
     text-align: center;
     align-content: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--fuente-principal);
     margin-bottom: 20px;
 }
 
 .valores__title{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--fuente-principal);
     font-size: 22px;
-    padding: 30PX;
+    padding: 30px;
 }
 
 .valores__list{
@@ -535,3 +539,52 @@ footer{
     } */
 
 }
+
+
+/* ----------------------------------------------------------Seccion-Tareas--------------------------------------------------------*/
+
+.task_h1{
+    font-family: var(--fuente-principal);
+    text-align: center;
+    margin: 0;
+    margin-top: 1rem;
+    height: auto;
+    
+    
+}
+
+.task_ni{
+    margin: 3.5rem;
+    height: auto;
+    margin-top: 2rem;
+    background-image: linear-gradient(to left, #6a86ff 0%, #0015fc 50%, #30a2ff 100%);
+    box-shadow: 2px 5px 1px 2px rgb(255, 255, 255);
+    border-radius: 2rem;
+}
+
+.task_ni_title{
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+}
+
+.task_ni_content{
+    padding: 1rem;
+    padding-top: 0.5rem;
+    font-family: var(--fuente-principal);
+    font-size: 1.2rem;
+}
+
+/* .task_ni_button{
+    display: inline-block;
+    background-image: linear-gradient(to top left, #1250fa 0%, #070f61 50%, #303eff 100%);
+    color:white;
+    width: 150px;
+    height: 50px;
+    text-decoration: none;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} */
