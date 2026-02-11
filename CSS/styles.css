@@ -551,15 +551,11 @@ footer{
     height: auto;
 }
 
-.task_note{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 .task_ni{
     margin: 3.5rem;
     height: auto;
     margin-top: 2rem;
-    background-image: linear-gradient(to left, #6a86ff 0%, #0015fc 50%, #30a2ff 100%);
+    background-image: linear-gradient(to left, #6a86ff 0%, #0015fcb0 50%, #30a2ff 100%);
     box-shadow: 2px 5px 1px 2px rgb(255, 255, 255);
     border-radius: 2rem;
     transition: 
@@ -568,10 +564,28 @@ footer{
     background-color 0.3s ease;
 }
 
+.task_nm{
+    margin: 3.5rem;
+    height: auto;
+    margin-top: 2rem;
+    background-image: linear-gradient(to left, #1ef5b4 0%, #00fc71ad 50%, #0dd850 100%);
+    box-shadow: 2px 5px 1px 2px rgb(255, 255, 255);
+    border-radius: 2rem;
+    transition: 
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease; 
+}
+
 .task_ni:hover{
   transform: translateY(-6px) scale(1.01);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
+
+.task_nm:hover{
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  }
 
 .task_ni_link{
     display: block;
@@ -595,7 +609,12 @@ footer{
     font-size: 1.2rem;
     cursor: pointer;
 }
+.task_notep{
+    font-size: 1.2rem;
+    margin: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
 
+}
 /* .task_ni_button{
     display: inline-block;
     background-image: linear-gradient(to top left, #1250fa 0%, #070f61 50%, #303eff 100%);
