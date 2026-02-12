@@ -109,6 +109,17 @@ nav .options-list:hover{
     background-clip: text;
 }
 
+.icon-menu{
+    width: 1.3rem;
+    height: auto;
+}
+
+/* .icon-menu .options-list{
+    display: flex;
+    justify-content: center;
+    
+} */
+
 .title{
     display: flex;   
     font-family: var(--fuente-principal);
@@ -402,6 +413,20 @@ form .boton-env{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.contact-resources li{
+    align-items: center;
+    padding: 20px;
+    color: #000000;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form-icons{
+    width: 25px;
+    max-width: 100%;
+    height: auto;
+}
+
 .section-contact{
     background-color: #fff;
     height: 85%;
@@ -417,28 +442,24 @@ form .boton-env{
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    align-content: center;
+    align-items: center;
+    gap: 6.5vw;
+    color: #000000;
+}
+
+.section-contact li{
+    text-align: center;
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10vw;
-    color: #000000;
 }
 
 .contact-resources{
     list-style-type: none;
 }
 
-.contact-resources li{
-    padding: 20px;
-    color: #000000;
-    font-size: 17px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
-.form-icons{
-    width: 25px;
-    max-width: 100%;
-    height: auto;
-}
 
 footer{
     height: 100px;
@@ -451,18 +472,28 @@ footer{
 }
 
 .imgs-footer{
-    width: 4vw;
-    max-width: 100%;
+    width: 8rem;
+    max-width: 50%;
+    max-height: 100%;
     height: auto;
 }
 
 .img-footer{
     display: flex;
     flex-direction: column;
-    width: 9vw;
-    max-width: 100%;
+    width: 13rem;
+    max-width: 60%;
     height: auto;
+    max-height: 100%;
 }
+
+.img-footer-logo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
 
 .section-copyright{
     height: 15%;
@@ -477,6 +508,149 @@ footer{
     text-align: center;
 }
 
+/* ----------------------------------------------------------Seccion-Tareas--------------------------------------------------------*/
+
+.task_h1{
+    font-family: var(--fuente-principal);
+    text-align: center;
+    margin: 0;
+    margin-top: 1rem;
+    height: auto;
+}
+
+.task_ni{
+    margin: 3.5rem;
+    height: auto;
+    margin-top: 2rem;
+    background-image: linear-gradient(to left, #6a86ff 0%, #0015fcb0 50%, #30a2ff 100%);
+    box-shadow: 2px 5px 1px 2px rgb(255, 255, 255);
+    border-radius: 2rem;
+    transition: 
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.task_nm{
+    margin: 3.5rem;
+    height: auto;
+    background-image: linear-gradient(to left, #1ef5b4 0%, #00fc71ad 50%, #0dd850 100%);
+    box-shadow: 2px 5px 1px 2px rgb(255, 255, 255);
+    border-radius: 2rem;
+    transition: 
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease; 
+}
+
+.task_ni:hover{
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.task_nm:hover{
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  }
+
+.task_ni_link{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+.task_ni_title{
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.task_ni_content{
+    padding: 1rem;
+    color: #000000;
+    padding-top: 0.5rem;
+    font-family: var(--fuente-principal);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.task_notep{
+    font-size: 1.2rem;
+    margin: 1rem 3.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+/* .task_ni_button{
+    display: inline-block;
+    background-image: linear-gradient(to top left, #1250fa 0%, #070f61 50%, #303eff 100%);
+    color:white;
+    width: 150px;
+    height: 50px;
+    text-decoration: none;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} */
+
+/* Diseño para tablet  */
+@media (max-width: 1024px){
+
+    
+
+    .u-list .title{
+        display: flex;
+        align-items: start;
+    }
+
+    .title{
+        font-size: 1rem;
+    }
+
+    .item-centralizado img{
+        width: 15vh;
+        height: auto;
+    }
+
+    .nav-bar .u-list{
+        height: 12vh;
+        display: flex;
+        align-items: center;
+        /* width: auto; */
+    }
+
+    .nav-bar li{
+        padding: 2px 18px;
+        cursor: pointer;
+        margin: 0;
+        font-size: 1.2rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .options{
+        padding: 0;
+    }
+
+    figure{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding-left: 20px;
+    }
+    
+    .area-btn-tareas{
+        padding-top: 20px;
+    }
+
+
+
+}
+
+/* Diseño para tablet pequeña */
 
 @media (max-width: 768px){
 
@@ -525,7 +699,33 @@ footer{
         padding-top: 20px;
     }
 
-    
+    .imgs-footer{
+        width: 8rem;
+    }
+
+    form .boton-env{
+        font-size: .9rem;
+    }
+
+    .section-copyright{
+        text-align: center;
+    }
+
+    .task_notep{
+        margin: 10px 60px;
+        font-size: .8rem;
+    }
+
+    .task_ni_title{
+        font-size: 1.2rem;
+        height: 40px;
+    }
+
+    .task_ni_content{
+        font-size: 1rem;
+        text-align: justify;
+    }
+
 
 
 /* 
@@ -540,91 +740,12 @@ footer{
 
 }
 
-
-/* ----------------------------------------------------------Seccion-Tareas--------------------------------------------------------*/
-
-.task_h1{
-    font-family: var(--fuente-principal);
-    text-align: center;
-    margin: 0;
-    margin-top: 1rem;
-    height: auto;
-}
-
-.task_ni{
-    margin: 3.5rem;
-    height: auto;
-    margin-top: 2rem;
-    background-image: linear-gradient(to left, #6a86ff 0%, #0015fcb0 50%, #30a2ff 100%);
-    box-shadow: 2px 5px 1px 2px rgb(255, 255, 255);
-    border-radius: 2rem;
-    transition: 
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    background-color 0.3s ease;
-}
-
-.task_nm{
-    margin: 3.5rem;
-    height: auto;
-    margin-top: 2rem;
-    background-image: linear-gradient(to left, #1ef5b4 0%, #00fc71ad 50%, #0dd850 100%);
-    box-shadow: 2px 5px 1px 2px rgb(255, 255, 255);
-    border-radius: 2rem;
-    transition: 
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    background-color 0.3s ease; 
-}
-
-.task_ni:hover{
-  transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-}
-
-.task_nm:hover{
-    transform: translateY(-6px) scale(1.01);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-  }
-
-.task_ni_link{
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    
-}
-
-.task_ni_title{
-    text-decoration: none;
-    text-align: center;
-    padding: 1rem;
-    cursor: pointer;
-}
-
-.task_ni_content{
-    padding: 1rem;
-    color: #000000;
-    padding-top: 0.5rem;
-    font-family: var(--fuente-principal);
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-.task_notep{
-    font-size: 1.2rem;
-    margin: 3rem;
-    font-family: Arial, Helvetica, sans-serif;
+/* Diseño para celular */
+@media(max-width:480px){
 
 }
-/* .task_ni_button{
-    display: inline-block;
-    background-image: linear-gradient(to top left, #1250fa 0%, #070f61 50%, #303eff 100%);
-    color:white;
-    width: 150px;
-    height: 50px;
-    text-decoration: none;
-    border-radius: 5px;
-    justify-content: center;
-    text-align: center;
-    font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-} */
+
+/* Diseño para celular pequeño */
+@media(max-width: 390px){
+
+}
