@@ -67,6 +67,18 @@ body::before {
     font-size: 1.4rem;
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .hamburger span {
+    width: 50px;
+    height: 3px;
+    background: white;
+  }
+
 .options{
     display: flex;
     flex-direction: row;
@@ -660,32 +672,92 @@ footer{
     }
 
     .title{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .item-centralizado img{
+        margin-right: 8rem;
         width: 15vh;
         height: auto;
     }
 
+    .nav-bar{
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.3s ease;
+        z-index: 1000;
+    }
+    
     .nav-bar .u-list{
-        height: 12vh;
-        display: flex;
-        align-items: center;
-        /* width: auto; */
+        flex-direction: row;
+        text-align: center;
+        padding: 20px 3rem;
     }
 
-    .nav-bar li{
+    .options{
+            position: absolute;
+            top: 90px;
+            right: 0;
+            background: #0623a0;
+            flex-direction: column;
+            align-items: center;
+            display: none;
+            padding: 20px 0;
+        }
+
+    .options.active{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        top: 4.78rem;
+        background-image: linear-gradient(to bottom, #0623a0 0%, #7972dd 50%, #e0dfe9 100%);
+        gap: 3rem;
+        padding-top: 5rem;
+        z-index: 2000;
+    }
+
+    .options-list{
+    
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .nav-bar li a{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 1.6rem;
+    }
+
+    .nav-bar .options-list:hover{
+        box-shadow: none;
+        width: 80%;
+        transform: scale(1.5);
+        font-size: 2rem;
+    }
+
+    .hamburger{
+        color: #000000;
+        display: block;
+        position: static; 
+        font-size: 40px;
+        background: none;
+        border: none;
+        cursor: pointer; 
+    }
+
+    .nav-bar.active{
+        transform: translateY(0);
+    }
+
+    /* .nav-bar li{
         padding: 2px 18px;
         cursor: pointer;
         margin: 0;
         font-size: 1.2rem;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
-    .options{
-        padding: 0;
-    }
+    } */
 
     figure{
         display: flex;
@@ -742,6 +814,26 @@ footer{
 
 /* Diseño para celular */
 @media(max-width:480px){
+
+    .u-list .title{
+        font-size: 1rem;
+    }
+
+    
+    .item-centralizado img {
+        margin-right: 2rem;
+        width: 15vh;
+        height: auto;
+    }
+
+    .nav-bar .options-list:hover{
+        transform: scale(1.1);
+    }
+
+    .nav-bar li a {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 1.1rem;
+    }
 
 }
 
